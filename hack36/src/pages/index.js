@@ -12,8 +12,10 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className="bg-gray-900">
-				<div className="">Choose from a list</div>
+			<main className="py-1 bg-gray-900">
+				<div className="text-2xl font-bold text-center text-white">
+					Choose from a list
+				</div>
 				<Games />
 			</main>
 		</>
