@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Games from "@/components/Games"
+import Footer from "../components/Footer"
 
 export default function Home() {
 	return (
