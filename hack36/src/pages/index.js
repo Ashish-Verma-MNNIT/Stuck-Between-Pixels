@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Navbar from "@/components/Navbar"
 import Games from "@/components/Games"
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<Navbar />
 			<main className="bg-gray-900">
 				<div className="">Choose from a list</div>
 				<Games />
