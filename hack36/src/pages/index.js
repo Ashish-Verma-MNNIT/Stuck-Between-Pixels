@@ -11,8 +11,10 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<main className="py-1 text-white bg-gray-900">
-				<div className="text-2xl font-bold text-center"></div>
+			<main className="py-1">
+				<div className="text-2xl font-bold text-center">
+					<h1>Get your companies certified</h1>
+				</div>
 			</main>
 		</>
 	)
