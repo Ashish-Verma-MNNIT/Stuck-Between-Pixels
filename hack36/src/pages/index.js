@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Login from '../pages/auth/login'
 
 export default function Home() {
 	return (
@@ -13,6 +14,9 @@ export default function Home() {
 			</Head>
 			<main className="py-1 text-white bg-gray-900">
 				<div className="text-2xl font-bold text-center"></div>
+				<div className="grid h-screen bg-blue-500 place-items-center">
+				<Login/>
+</div>
 			</main>
 		</>
 	)
