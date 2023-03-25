@@ -8,7 +8,12 @@ const About = () => {
         <p className="mb-8 text-lg sm:text-xl lg:text-2xl">
           We are a team of developers dedicated to building awesome software.  <br>
           </br>
-          Priyanshu Raj
+          <br></br>
+            Team Name : Stuck-Between-Pixels<br></br>
+            <br></br>Ashish Verma
+            <br></br>Priyanshu Raj
+            <br></br>Megha Rai
+            <br></br>Dharmendra
         </p>
         <div className="lg:flex">
           <div className="mb-8 lg:mb-0 lg:pr-12">
