@@ -4,10 +4,13 @@ import Footer from "./Footer"
 export default function Layout({ children }) {
 	return (
 		<>
-			<NavBar />
+			<NavBar/>
 			{children}
-			<img src="./fire.jpg" className="w-full h-full"></img>
-			<Footer />
+			<div>
+			<img src="./green.jpg" className="w-full h-70%"></img>
+
+			</div>
+			<Footer/>
 		</>
 	)
 }
