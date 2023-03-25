@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 
-export default function NavBar() {
+export default function Navbar() {
 	const [navbar, setNavbar] = useState(false)
 
 	return (
@@ -53,9 +53,8 @@ export default function NavBar() {
 				</div>
 				<div>
 					<div
-						className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-							navbar ? "block" : "hidden"
-						}`}>
+						className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+							}`}>
 						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
 							<li className="text-white hover:text-indigo-200">
 								<Link href="javascript:void(0)">Home</Link>
@@ -66,10 +65,11 @@ export default function NavBar() {
 								</Link>
 							</li>
 							<li className="text-white hover:text-indigo-200">
-								<Link href="javascript:void(0)">About US</Link>
+
+								<Link href="/about">About US</Link>
 							</li>
 							<li className="text-white hover:text-indigo-200">
-								<Link href="javascript:void(0)">
+								<Link href="/contact">
 									Contact US
 								</Link>
 							</li>
