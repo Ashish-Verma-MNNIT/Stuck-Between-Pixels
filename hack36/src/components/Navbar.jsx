@@ -64,6 +64,7 @@ export default function NavBar() {
 								<Link href="javascript:void(0)">Certificates</Link>
 							</li>
 							<li className="text-white hover:text-indigo-200">
+								
 								<Link href="javascript:void(0)">About US</Link>
 							</li>
 							<li className="text-white hover:text-indigo-200">

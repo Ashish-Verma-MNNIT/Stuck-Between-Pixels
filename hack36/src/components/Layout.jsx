@@ -6,10 +6,6 @@ export default function Layout({ children }) {
 		<>
 			<NavBar/>
 			{children}
-			<div>
-			<img src="./green.jpg" className="w-full h-70%"></img>
-
-			</div>
 			<Footer/>
 		</>
 	)
