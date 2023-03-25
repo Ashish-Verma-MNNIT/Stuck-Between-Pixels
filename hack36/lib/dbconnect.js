@@ -1,13 +1,7 @@
 import mongoose from "mongoose"
+const MONGO_URI = process.env.MONGO_URI
 
-/** 
-Source : 
-https://github.com/vercel/next.js/blob/canary/examples/with-mongodb-mongoose/utils/dbConnect.js 
-**/
-
-const MONGODB_URI = process.env.MONGODB_URI
-
-if (!MONGODB_URI) {
+if (!MONGO_URI) {
 	throw new Error(
 		"Please define the MONGODB_URI environment variable inside .env.local"
 	)
