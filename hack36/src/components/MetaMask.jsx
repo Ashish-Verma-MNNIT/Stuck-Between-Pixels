@@ -20,12 +20,19 @@ const MetaMask = () => {
     const accountChanged = (accountName) => {
         setDefultAccount(accountName);
     }
+
+    const getUserBalance = (accountAddress)=>{
+        window.ethereum.request({method : 'ethe_getBelance', params : [String(accountAddress), "letes"]})
+        .then(balance => {
+            setUserBalance(ethers.utils.formatEther(balance));
+        })
+    }
     return (
         <div>
             <h1>Meta connectt</h1>
             <buton onClick={connectWallet}>Connect Wallet</buton>
             <h3>Address : {defaultAccount}</h3>
-            <h3>Balance : $</h3>
+            <h3>Balance : $(userBalance)</h3>
             {errorMessage}
         </div>
     )
