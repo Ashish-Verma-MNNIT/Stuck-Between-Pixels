@@ -1,8 +1,7 @@
 import Head from "next/head"
-import MetaMask from '../components/MetaMask'
+import MetaMask from "../components/MetaMask"
 
 export default function Home() {
-
 	return (
 		<>
 			<Head>
@@ -19,7 +18,6 @@ export default function Home() {
 				<div className="text-2xl font-bold text-center"></div>
 				<div className="grid h-screen bg-blue-500 place-items-center">
 					<MetaMask />
-
 				</div>
 			</main>
 		</>

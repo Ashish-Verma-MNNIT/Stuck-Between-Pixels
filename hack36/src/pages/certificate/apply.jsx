@@ -43,10 +43,25 @@ export default function Apply() {
 						type="file"
 					/>
 				</fieldset>
-				<button type="submit" onClick={apply}>
+				<button type="submit" onClick={upload}>
 					Submit
 				</button>
 			</form>
 		</div>
 	)
+}
+
+const upload = () => {
+	const options = {
+		method: "POST",
+		headers: {
+			accept: "application/json",
+			"content-type": "multipart/form-data",
+		},
+	}
+
+	fetch("https://api.verbwire.com/v1/nft/store/file", options)
+		.then(response => response.json())
+		.then(response => console.log(response))
+		.catch(err => console.error(err))
 }
