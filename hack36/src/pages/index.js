@@ -1,5 +1,9 @@
 import Head from "next/head"
+<<<<<<< HEAD
 import MetaMask from './MetaMask'
+=======
+import Login from "../pages/auth/login"
+>>>>>>> 13534db20a67a947464c93c867afdb9e47232c56
 
 export default function Home() {
 	
