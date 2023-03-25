@@ -9,20 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
     "@web3-react/core": "^8.1.2-beta.0",
     "@web3-react/injected-connector": "^6.0.7",
     "@web3-react/walletconnect": "^8.0.37-beta.0",
     "@web3-react/walletconnect-connector": "^6.2.13",
+    "buffer": "^6.0.3",
     "dotenv": "^16.0.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "ethers": "^6.2.2",
+    "ipfs-http-client": "^60.0.0",
     "moralis": "^2.18.0",
     "moralis-v1": "^1.12.0",
     "next": "13.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-moralis": "^1.4.2",
+    "verbwire": "^1.0.4",
     "web3": "^1.9.0"
   },
   "devDependencies": {
