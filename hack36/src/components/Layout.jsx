@@ -6,6 +6,7 @@ export default function Layout({ children }) {
 		<>
 			<NavBar />
 			{children}
+			<img src="./fire.jpg" className="w-full h-full"></img>
 			<Footer />
 		</>
 	)
