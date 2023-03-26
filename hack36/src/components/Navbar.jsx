@@ -6,16 +6,16 @@ export default function Navbar() {
 
 	return (
 		<nav className="sticky top-0 z-50 w-full shadow bg-slate-800">
-			{/* <img classname=""src="./iam.jpg"></img> */}
-
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 				<div>
 					<div className="flex items-center justify-between py-3 md:py-5 md:block">
-						<Link href="javascript:void(0)">
-							<h2 className="text-2xl font-bold text-white">
-								Eco-certify{" "}
-							</h2>
-						</Link>
+					<Link href="javascript:void(0)">
+					<div class="flex items-center">
+					<img src="logo.png" alt="Eco-certify logo" class="h-11 mr-2"></img>
+					<h2 class="text-2xl font-bold text-white">Eco-certify</h2>
+					</div>
+					</Link>
+
 						<div className="md:hidden">
 							<button
 								className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -57,10 +57,10 @@ export default function Navbar() {
 							}`}>
 						<ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
 							<li className="text-white hover:text-indigo-200">
-								<Link href="javascript:void(0)">Home</Link>
+								<Link href="/">Home</Link>
 							</li>
 							<li className="text-white hover:text-indigo-200">
-								<Link href="javascript:void(0)">
+								<Link href="">
 									Certificates
 								</Link>
 							</li>
