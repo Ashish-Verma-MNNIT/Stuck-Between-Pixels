@@ -1,4 +1,4 @@
-import { useRef } from "react"
+import { useRef,useState } from "react"
 const NEXT_PUBLIC_VERBWIRE_API_KEY = process.env.NEXT_PUBLIC_VERBWIRE_API_KEY
 
 export default function Apply() {
