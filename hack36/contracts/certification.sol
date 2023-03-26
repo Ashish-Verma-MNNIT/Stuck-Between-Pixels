@@ -8,6 +8,7 @@ contract EcoFriendlyCertification {
         string certificationStandard;
         address certifiedBy;
         uint256 certificationDate;
+        address certifiedTo;
     }
 
     Certification[] public certifications;
@@ -20,7 +21,8 @@ contract EcoFriendlyCertification {
         string productName,
         string certificationStandard,
         address certifiedBy,
-        uint256 certificationDate
+        uint256 certificationDate,
+        address certifiedTo
     );
 
     constructor() {
@@ -52,7 +54,8 @@ contract EcoFriendlyCertification {
     //create a certificate
     function createCertification(
         string memory _productName,
-        string memory _certificationStandard
+        string memory _certificationStandard,
+        address _certifiedTo
     ) public onlyCertifier {
         uint256 certificationDate = block.timestamp;
         certifications.push(
@@ -60,18 +63,20 @@ contract EcoFriendlyCertification {
                 _productName,
                 _certificationStandard,
                 msg.sender,
-                certificationDate
+                certificationDate,
+                _certifiedTo
             )
         );
         emit CertificationCreated(
             _productName,
             _certificationStandard,
             msg.sender,
-            certificationDate
+            certificationDate,
+            _certifiedTo
         );
     }
 
-    //to details of a particular certificate
+    //to get details of a particular certificate
     function getCertification(
         uint256 _index
     ) public view returns (string memory, string memory, address, uint256) {
@@ -84,4 +89,14 @@ contract EcoFriendlyCertification {
             cert.certificationDate
         );
     }
+
+    // function transferCertificate(uint256 certificateId, address to) public {
+    //     require(msg.sender == certificates[certificateId].owner, "Only the owner can transfer the certificate");
+    //     require(certificates[certificateId].transferred == false, "Certificate has already been transferred");
+
+    //     certificates[certificateId].transferred = true;
+    //     certificates[certificateId].owner = to;
+
+    //     emit CertificateTransferred(certificateId, msg.sender, to);
+    // }
 }
