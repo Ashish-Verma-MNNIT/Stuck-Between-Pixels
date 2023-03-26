@@ -9,12 +9,12 @@ export default function Navbar() {
 			<div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 				<div>
 					<div className="flex items-center justify-between py-3 md:py-5 md:block">
-					<Link href="javascript:void(0)">
-					<div class="flex items-center">
-					<img src="logo.png" alt="Eco-certify logo" class="h-11 mr-2"></img>
-					<h2 class="text-2xl font-bold text-white">Eco-certify</h2>
-					</div>
-					</Link>
+						<Link href="javascript:void(0)">
+							<div class="flex items-center">
+								<img src="logo.png" alt="Eco-certify logo" class="h-11 mr-2"></img>
+								<h2 class="text-2xl font-bold text-white">Eco-certify</h2>
+							</div>
+						</Link>
 
 						<div className="md:hidden">
 							<button
@@ -60,9 +60,15 @@ export default function Navbar() {
 								<Link href="/">Home</Link>
 							</li>
 							<li className="text-white hover:text-indigo-200">
-								<Link href="">
-									Certificates
+								<Link href="./certificate/apply">
+									Apply For Certificates
 								</Link>
+								</li>
+							<li className="text-white hover:text-indigo-200">
+								<Link href="./certifier/apply">
+									Apply For Certifier
+								</Link>
+							
 							</li>
 							<li className="text-white hover:text-indigo-200">
 
