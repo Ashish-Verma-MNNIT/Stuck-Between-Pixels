@@ -11,7 +11,7 @@ These criteria may include factors such as energy efficiency, carbon emissions, 
   <a href="">null</a>
   
 ## Presentation Link:
-  <a href="null">null</a>
+  <a href="https://drive.google.com/file/d/1mqoqlTIov9855p1NcCecaMuKYkm6yL0Z/view?usp=share_link">PPT Link</a>
 
 ## Technology Stack:
   1) Nextjs
