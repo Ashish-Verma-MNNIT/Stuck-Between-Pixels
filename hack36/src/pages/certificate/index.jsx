@@ -1,5 +1,5 @@
 import { useRouter } from "next/router"
-
+import Card from "@/components/Card"
 export async function getStaticProps() {
 	const address = sessionStorage.getItem("address")
 	if (!address) return { props: {} }
@@ -18,7 +18,7 @@ export default function Certificate(props) {
 		<div>
 			Here is a list of all your certificates:-
 			{props.certificates.map(d => (
-				<Card data={d} />
+				<Card data={d} key={d._id} />
 			))}
 		</div>
 	)
